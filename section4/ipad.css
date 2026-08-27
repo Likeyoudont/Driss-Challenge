@@ -1,0 +1,128 @@
+.background {
+  min-height: 100vh;
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+
+  inset: 0;
+
+  background-image: url("Screenshot From 2026-08-10 13-24-42.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+
+  z-index: 0;
+}
+
+.tittre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.responsive {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.design {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.line {
+  border: none;
+  width: 50px;
+  height: 4px;
+  background-color: #f38181;
+  margin: 30px 0;
+}
+
+.ipad {
+  width: 355px;
+  height: 500px;
+  position: absolute;
+  right: 36.5%;
+  bottom: 0;
+}
+
+.iphone {
+  width: 250px;
+  height: 370px;
+  position: absolute;
+  left: 55%;
+  top: 61%;
+}
+
+@media (max-width: 991px) {
+  .ipad {
+    right: 38%;
+  }
+
+  .iphone {
+    left: 53%;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 776px) {
+  .tittre {
+    padding-top: 20px;
+  }
+
+  .responsive {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .design {
+    font-size: 24px;
+  }
+
+  .line {
+    margin: 20px 0;
+  }
+
+  .ipad {
+    width: 240px;
+    height: 338px;
+    right: auto;
+    left: calc(50% - 168px);
+    bottom: 0;
+  }
+
+  .iphone {
+    width: 170px;
+    height: 252px;
+    left: 50%;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ipad {
+    width: 195px;
+    height: 275px;
+    left: calc(50% - 137px);
+  }
+
+  .iphone {
+    width: 138px;
+    height: 204px;
+    left: 50%;
+  }
+}

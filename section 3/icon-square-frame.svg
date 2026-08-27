@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
+  <!-- cadre exterieur complet -->
+  <rect x="8" y="8" width="84" height="84" fill="none" stroke="#7DD8CC" stroke-width="8"/>
+  <!-- 4 coins interieurs separes -->
+  <g fill="none" stroke="#7DD8CC" stroke-width="7">
+    <path d="M28 30 V22 H40" />
+    <path d="M60 22 H72 V30" />
+    <path d="M72 70 V78 H60" />
+    <path d="M40 78 H28 V70" />
+  </g>
+</svg>
