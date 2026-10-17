@@ -52,6 +52,11 @@
   inset: 0;
   box-shadow: 10px 10px #95e1d3;
 }
+#about .img-go-team {
+  display: block;
+  flex-shrink: 0;
+  text-decoration: none;
+}
 #about .about-over {
   position: absolute;
   inset: 0;
