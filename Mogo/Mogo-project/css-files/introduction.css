@@ -1,0 +1,199 @@
+/* la page mesure  */
+#introduction {
+  background:
+    linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)),
+    url("../photos/introduction/eagle-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* menu dessin */
+#introduction .introduction-up_the_page {
+  display: flex;
+  align-items: center;
+  padding: 17px 50px;
+}
+#introduction .introduction-nav-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 229px;
+  margin-left: 29px;
+}
+#introduction .introduction-logo {
+  font-size: 30px;
+  font-weight: 390;
+  color: #ffffff;
+  margin: 12px 424px -29px 151px;
+  text-decoration: solid;
+}
+#introduction .introduction-nav-underline {
+  color: #fbe389;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#introduction .introduction-underline {
+  width: 45px;
+  height: 3px;
+  flex-shrink: 0;
+  background-color: #fbe389;
+  margin-top: 0;
+}
+#introduction .nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+/* title section */
+#introduction .introduction-title_continer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 50px 50px;
+}
+#introduction .introduction-italic_cretive_template {
+  font-size: 72px;
+  font-family: "Kaushan Script", cursive;
+  color: rgb(255, 255, 255);
+  margin: 27px 0 -6px 0px;
+}
+#introduction .introduction-title {
+  font-size: 150px;
+  color: #ffffff;
+  font-weight: 607;
+  text-transform: uppercase;
+}
+#introduction .introduction-title-line {
+  display: block;
+  margin: -43px 1px 1px 40px;
+}
+#introduction .introduction-divider {
+  width: 60px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  margin: 31px 0 126px 0;
+}
+#introduction .introduction-button {
+  background: transparent;
+  color: #ffffff;
+  border: #ffffff solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  height: 40px;
+  border-radius: 4px;
+}
+#introduction .introduction-step_nav {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  width: 100%;
+  list-style: none;
+}
+#introduction .introduction-step-ligne {
+  width: 200px;
+  height: 2px;
+  background: white;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+#introduction .introduction-step-ligne1 {
+  width: 200px;
+  height: 3px;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    #f38181 0%,
+    #f38181 30%,
+    white 30%,
+    white 100%
+  );
+  background-blend-mode: lighten;
+}
+#introduction .nav-item:hover {
+  border: 1px solid #fff;
+  border-style: hidden;
+}
+
+
+/*RESPONSIVE MEDIA QUERIES */
+
+@media (max-width: 991px) {
+#introduction .introduction-logo {
+    margin: 0 30px 0 0;
+  }
+#introduction .introduction-nav-menu {
+    margin: 0;
+  }
+#introduction .introduction-title {
+    font-size: 90px;
+  }
+#introduction .introduction-italic_cretive_template {
+    font-size: 55px;
+  }
+#introduction .introduction-title-line {
+    margin: 0; 
+  }
+#introduction .introduction-step-ligne,
+#introduction .introduction-step-ligne1 {
+    width: 130px;
+  }
+#introduction .introduction-step_nav {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 776px) {
+#introduction .introduction-up_the_page {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+#introduction .introduction-logo {
+    margin: 0;
+  }
+#introduction .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+#introduction .introduction-title {
+    font-size: 60px;
+  }
+#introduction .introduction-italic_cretive_template {
+    font-size: 40px;
+  }
+#introduction .introduction-title_continer {
+    padding: 20px;
+  }
+#introduction .introduction-divider {
+    margin: 30px 0 60px 0;
+  }
+#introduction .introduction-step_nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+#introduction .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+#introduction .introduction-step-ligne,
+#introduction .introduction-step-ligne1 {
+    width: 100%; 
+    margin: 0 auto 10px auto;
+  }
+}

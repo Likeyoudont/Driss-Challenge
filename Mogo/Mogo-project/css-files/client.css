@@ -1,0 +1,276 @@
+
+#clients .clients-happy-client {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+padding: 70px 0 0 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../photos/section8/mountaine.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#clients .clients-happy-client .clients-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#clients .clients-happy-client .clients-happy-client-text {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #000000;
+}
+#clients .clients-happy-client .clients-what-people-say {
+  font-family: "Montserrat", sans-serif;
+ font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+}
+#clients .clients-happy-client .clients-divider {
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  border: none;
+  margin: 7px 0 18px 0;
+}
+#clients .clients-happy-client .clients-client-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+ grid-template-columns: 593px 509px;
+  grid-template-rows: 220px 216px;
+  grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4";
+  justify-content: center;
+  align-items: center;
+  gap: 20px 20px;
+  padding: 0 0 0 0;
+}
+#clients .clients-image {
+position: relative;
+ width: 97px;
+  height: 99px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+}
+#clients .clients-image .clients-img-1 {
+  position: absolute;   
+  top: 72%;              
+  left: 51%;              
+  width: 120%;
+  height: 157%;
+  transform: translate(-50%, -50%); 
+  object-fit: cover;
+  object-position: center;
+}
+#clients .clients-image .clients-img-2 {
+  position: absolute;   
+  top: 55%;              
+  left: 43%;              
+  width: 122%;
+  height: 300%;
+  transform: translate(-50%, -50%);  
+  object-fit: cover;
+  object-position: center;
+}
+#clients .clients-image .clients-img-3 {
+  position: absolute;   
+  top: 62%;              
+  left: 50%;              
+  width: 120%;
+  height: 149%;
+  transform: translate(-50%, -50%);  
+  object-fit: cover;
+  object-position: center;
+}
+#clients .clients-image .clients-img-4 {
+  position: absolute;   
+  top: 197%;              
+  left: 128%;              
+  width: 294%;
+  height: 465%;
+  transform: translate(-50%, -50%);  
+  object-fit: cover;
+  object-position: center;
+}
+#clients .clients-client-container .clients-box {
+display: grid;
+  grid-template-columns: 130px 483px;
+
+}
+#clients .clients-text-for-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+ }
+#clients .clients-client-container .h4 {
+    font-size: 24px;
+ }
+#clients .clients-client-container .clients-text-for-img > p {
+    font-size: 15px;
+ }
+#clients .clients-client-container .clients-divider > p {
+    font-size: 14px;
+ }
+
+
+@media (max-width: 991px) {
+#clients .clients-happy-client {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0 60px;
+    overflow: hidden;
+  }
+#clients .clients-happy-client .clients-heading {
+    width: 100%;
+    padding: 0 20px;
+  }
+#clients .clients-happy-client .clients-happy-client-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+#clients .clients-happy-client .clients-what-people-say {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+#clients .clients-happy-client .clients-divider {
+    width: 50px;
+    height: 3px;
+    margin: 5px auto 25px;
+  }
+
+  /* Main client grid */
+#clients .clients-happy-client .clients-client-container {
+    display: grid;
+
+  
+    grid-template-columns: 1fr;
+
+    
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4";
+
+    width: 100%;
+    padding: 10px 20px 40px;
+    gap: 45px 0;
+
+    justify-content: initial;
+    align-items: start;
+  }
+#clients .clients-client-container .clients-box {
+    display: grid;
+
+    grid-template-columns: 90px minmax(0, 1fr);
+
+    width: 100%;
+    min-width: 0;
+
+    gap: 20px;
+    align-items: start;
+  }
+#clients .clients-image {
+    width: 75px;
+    height: 75px;
+    flex-shrink: 0;
+  }
+#clients .clients-image .clients-img-1 {
+    top: 72%;
+    left: 51%;
+    width: 120%;
+    height: 157%;
+  }
+#clients .clients-image .clients-img-2 {
+    top: 55%;
+    left: 43%;
+    width: 122%;
+    height: 300%;
+  }
+#clients .clients-image .clients-img-3 {
+    top: 62%;
+    left: 50%;
+    width: 120%;
+    height: 149%;
+  }
+#clients .clients-image .clients-img-4 {
+    top: 197%;
+    left: 128%;
+    width: 294%;
+    height: 465%;
+  }
+#clients .clients-text-for-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    min-width: 0;
+    width: 100%;
+  }
+#clients .clients-client-container .h4,
+#clients .clients-client-container h4 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    line-height: 1.2;
+  }
+#clients .clients-client-container .clients-text-for-img > p {
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin: 0 0 12px;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+#clients .clients-client-container .clients-text-for-img > .clients-divider {
+    width: 45px;
+    height: 3px;
+    margin: 3px 0 18px;
+  }
+}
+@media (max-width: 480px) {
+#clients .clients-happy-client {
+    padding-top: 40px;
+  }
+#clients .clients-happy-client .clients-heading {
+    padding: 0 15px;
+  }
+#clients .clients-happy-client .clients-happy-client-text {
+    font-size: 14px;
+  }
+#clients .clients-happy-client .clients-what-people-say {
+    font-size: 19px;
+  }
+#clients .clients-happy-client .clients-client-container {
+    padding: 5px 15px 30px;
+    gap: 40px;
+  }
+#clients .clients-client-container .clients-box {
+    grid-template-columns: 75px minmax(0, 1fr);
+    gap: 15px;
+  }
+#clients .clients-image {
+    width: 65px;
+    height: 65px;
+  }
+#clients .clients-client-container .clients-text-for-img h4 {
+    font-size: 17px;
+  }
+#clients .clients-client-container .clients-text-for-img > p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}

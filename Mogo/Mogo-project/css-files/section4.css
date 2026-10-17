@@ -1,0 +1,317 @@
+
+#what-we-do, #what-we-do * {
+  box-sizing: border-box;
+}
+#what-we-do {
+  margin: 0;
+}
+#what-we-do .container {
+  width: 100%;
+}
+#what-we-do .what-we-do-text-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 90px;
+}
+#what-we-do .what-we-do-service {
+  margin-top: 60px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: black;
+  margin-bottom: 5px;
+}
+#what-we-do .what-we-do-subtitle {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+#what-we-do .what-we-do-divider {
+  width: 50px;
+  height: 4px;
+  background-color: #f38181;
+  margin: 30px 0;
+}
+#what-we-do .what-we-do-paraph {
+  font-size: 15px;
+  opacity: 0.7;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* middle of the page  */
+#what-we-do .what-we-do-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "box-1 box-2"
+    "box-1 box-3"
+    "box-1 box-4";
+  gap: 30px;
+
+  margin-top: 50px;
+}
+#what-we-do .what-we-do-image {
+  grid-area: box-1;
+}
+#what-we-do .what-we-do-main-image {
+  width: 100%;
+  max-width: 550px;
+  height: 380px;
+  margin-left: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+#what-we-do .what-we-do-icon-placement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 15px;
+  width: 100%;
+  min-height: 50px;
+
+  border: 0.1px solid #e5e5e5;
+  padding: 0 12px;
+  margin-right: 120px;
+}
+#what-we-do .what-we-do-picture-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+#what-we-do .what-we-do-align-paraph {
+  margin: 0;
+  font-size: 14px;
+}
+#what-we-do .what-we-do-flech {
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#what-we-do .what-we-do-text-area {
+  display: none;
+  overflow-y: auto;
+  border: 0.1px solid #e5e5e5;
+  scrollbar-color: #95e1d3 #f5f5f5;
+  padding: 15px;
+  max-height: 150px;
+  line-height: 1.6;
+}
+#what-we-do .what-we-do-text-area.what-we-do-active {
+  display: block;
+}
+
+/* quote */
+#what-we-do .what-we-do-quote {
+  display: flex;
+  align-items: center;
+
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-top: 80px;
+  padding: 40px 0;
+  gap: 30px;
+}
+#what-we-do .what-we-do-quote > .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#what-we-do .what-we-do-quote-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+}
+#what-we-do .what-we-do-quote-paraph {
+  font-size: 24px;
+  opacity: 0.5;
+  margin: 0 0 15px 0;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  line-height: 1.5;
+}
+#what-we-do .what-we-do-line-quote {
+  width: 50px;
+  height: 3px;
+
+  background-color: #f38181;
+}
+#what-we-do .what-we-do-writer-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#what-we-do .what-we-do-quote-writer {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: black;
+  margin: 0;
+}
+#what-we-do .what-we-do-icon-box {
+  width: 85px;
+  height: 85px;
+
+  border: 1px solid #95e1d3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+#what-we-do .what-we-do-quote-icon {
+  width: 45px;
+  height: auto;
+}
+#what-we-do .what-we-do-quote > i {
+  font-size: 30px;
+
+  color: #cccccc;
+
+  opacity: 0.7;
+
+  flex-shrink: 0;
+}
+
+/* responsive */
+
+@media (max-width: 991px) {
+#what-we-do .what-we-do-text-4 {
+    padding: 0 40px;
+  }
+#what-we-do .what-we-do-subtitle {
+    font-size: 26px;
+  }
+#what-we-do .what-we-do-paraph {
+    font-size: 14px;
+  }
+
+  /* image + accordion */
+#what-we-do .what-we-do-grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+#what-we-do .what-we-do-main-image {
+    height: 320px;
+  }
+#what-we-do .what-we-do-icon-placement {
+    gap: 10px;
+  }
+#what-we-do .what-we-do-picture-icon {
+    margin-left: 0;
+  }
+#what-we-do .what-we-do-quote {
+    padding: 35px 30px;
+  }
+#what-we-do .what-we-do-quote-paraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* title */
+#what-we-do .what-we-do-text-4 {
+    padding: 0 20px;
+  }
+#what-we-do .what-we-do-service {
+    font-size: 22px;
+  }
+#what-we-do .what-we-do-divider {
+    margin: 20px 0;
+  }
+#what-we-do .what-we-do-paraph {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+#what-we-do .what-we-do-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4";
+    gap: 20px;
+  }
+#what-we-do .what-we-do-main-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+#what-we-do .what-we-do-icon-placement {
+    min-height: 50px;
+    padding: 0 10px;
+  }
+#what-we-do .what-we-do-picture-icon {
+    width: 22px;
+    height: 22px;
+  }
+#what-we-do .what-we-do-align-paraph {
+    font-size: 12px;
+  }
+#what-we-do .what-we-do-text-area {
+    max-height: 180px;
+    font-size: 13px;
+  }
+#what-we-do .what-we-do-quote {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 30px 20px;
+    gap: 20px;
+    text-align: center;
+  }
+#what-we-do .what-we-do-quote > i {
+    font-size: 24px;
+  }
+#what-we-do .what-we-do-icon-box {
+    width: 70px;
+    height: 70px;
+  }
+#what-we-do .what-we-do-quote-icon {
+    width: 35px;
+  }
+#what-we-do .what-we-do-quote-content {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+#what-we-do .what-we-do-quote-paraph {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+#what-we-do .what-we-do-writer-line {
+    justify-content: center;
+  }
+#what-we-do .what-we-do-quote-writer {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+#what-we-do .what-we-do-text-4 {
+    padding: 0 15px;
+  }
+#what-we-do .what-we-do-subtitle {
+    font-size: 20px;
+  }
+#what-we-do .what-we-do-paraph {
+    font-size: 12px;
+  }
+#what-we-do .what-we-do-quote {
+    padding: 25px 15px;
+  }
+#what-we-do .what-we-do-quote-paraph {
+    font-size: 15px;
+  }
+}

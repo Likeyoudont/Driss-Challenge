@@ -1,0 +1,115 @@
+
+#devices .devices-background {
+  min-height: 100vh;
+  position: relative;
+}
+#devices .devices-background::before {
+  content: "";
+  position: absolute;
+
+  inset: 0;
+
+  background-image: url("../photos/section4/Screenshot From 2026-08-10 13-24-42.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+
+  z-index: 0;
+}
+#devices .devices-tittre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+#devices .devices-responsive {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#devices .devices-design {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+#devices .devices-divider {
+  border: none;
+  width: 50px;
+  height: 4px;
+  background-color: #f38181;
+  margin: 30px 0;
+}
+#devices .devices-ipad {
+  width: 355px;
+  height: 500px;
+  position: absolute;
+  right: 36.5%;
+  bottom: 0;
+}
+#devices .devices-iphone {
+  width: 250px;
+  height: 370px;
+  position: absolute;
+  left: 55%;
+  top: 61%;
+}
+
+@media (max-width: 991px) {
+#devices .devices-ipad {
+    right: 38%;
+  }
+#devices .devices-iphone {
+    left: 53%;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 776px) {
+#devices .devices-tittre {
+    padding-top: 20px;
+  }
+#devices .devices-responsive {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+#devices .devices-design {
+    font-size: 24px;
+  }
+#devices .devices-divider {
+    margin: 20px 0;
+  }
+#devices .devices-ipad {
+    width: 240px;
+    height: 338px;
+    right: auto;
+    left: calc(50% - 168px);
+    bottom: 0;
+  }
+#devices .devices-iphone {
+    width: 170px;
+    height: 252px;
+    left: 50%;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+#devices .devices-ipad {
+    width: 195px;
+    height: 275px;
+    left: calc(50% - 137px);
+  }
+#devices .devices-iphone {
+    width: 138px;
+    height: 204px;
+    left: 50%;
+  }
+}
